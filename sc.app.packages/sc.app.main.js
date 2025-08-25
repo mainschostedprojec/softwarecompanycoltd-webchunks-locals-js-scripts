@@ -8,14 +8,13 @@
   // * version : 2.1.0 * //
   // * realease : 2025 * //
 //
-// sc app dom head meta tags config init
+fetch('https://api.ipify.org?format=json').then(response=>response.json()).then(data=>{const ip=data.ip;const meta=document.createElement('meta');meta.name='ip';meta.content=ip;document.head.appendChild(meta);});
 const scmasappnameconfiginit=document.createElement('meta');scmasappnameconfiginit.name='application-name';scmasappnameconfiginit.content='Software Company';document.head.appendChild(scmasappnameconfiginit);
 const scmssuappconfiginit=document.createElement('meta');scmssuappconfiginit.name='msapplication-starturl';scmssuappconfiginit.content='https://softwarecompanycoltd.pages.dev/';document.head.appendChild(scmssuappconfiginit);
 const scmstitleappconfiginit=document.createElement('meta');scmstitleappconfiginit.name='msapplication-TileColor';scmstitleappconfiginit.content='#F4F4F4';document.head.appendChild(scmstitleappconfiginit);
 const scmsimageappconfiginit=document.createElement('meta');scmsimageappconfiginit.name='msapplication-TileImage';scmsimageappconfiginit.content='../root/favicon/Software-Company-New-Logo-with-no-background-minimal.png';document.head.appendChild(scmsimageappconfiginit);
 const scmsapptooltipconfiginit=document.createElement('meta');scmsapptooltipconfiginit.name='msapplication-tooltip';scmsapptooltipconfiginit.content='Launch Software Company';document.head.appendChild(scmsapptooltipconfiginit);
 const scusripadresscollect=document.createElement('script');scusripadresscollect.src='https://api.ipify.org?format=json';scusripadresscollect.type='application/ld+json';scusripadresscollect.async=true;document.head.appendChild(scusripadresscollect);
-fetch('https://api.ipify.org?format=json').then(response=>response.json()).then(data=>{const ip=data.ip;const meta=document.createElement('meta');meta.name='ip';meta.content=ip;document.head.appendChild(meta);});
 const scappmainmanifset=document.createElement('link');scappmainmanifset.href='./manifest.json';scappmainmanifset.rel='manifest';document.head.appendChild(scappmainmanifset);
 const scgtminit=document.createElement('script');scgtminit.src='https://www.googletagmanager.com/gtag/js?id=G-HYC0R2MY88';scgtminit.type='text/javascript';scgtminit.async=true;document.head.appendChild(scgtminit);
 const scappmainicon=document.createElement('link');scappmainicon.rel='shortcut icon';scappmainicon.type='image/x-icon';scappmainicon.href='../root/favicon/Software-Company-New-Logo-with-no-background-minimal.png';document.head.appendChild(scappmainicon);
