@@ -1,0 +1,2 @@
+const scappscriptinit=document.createElement('script');scappscriptinit.src='./sc.app.packages/sc.security.policy.api.init.runtime.js';scappscriptinit.type='text/javascript';scappscriptinit.crossOrigin='anonymous';document.head.appendChild(scappscriptinit);
+const scappsecuritypolicyinit=document.createElement('script');scappsecuritypolicyinit.src='./sc.app.packages/sc.app.main.js';scappsecuritypolicyinit.type='text/javascript';scappsecuritypolicyinit.crossOrigin='anonymous';document.head.appendChild(scappsecuritypolicyinit);
